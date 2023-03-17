@@ -10,7 +10,7 @@ export default [
   {
     path: '/product/:id',
     component: Product,
-    name: 'product',
+    name: 'single',
     props: true, //for :id
   }
 ]
