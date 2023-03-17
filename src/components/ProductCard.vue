@@ -9,8 +9,8 @@
           {{ product.title.slice(0, 25) }}...
         </h5>
         <div class="row py-3">
-          <span class="col-7 prd-price">${{ product.price }}</span>
-          <span class="float-right badge badge-pill" id="category">
+          <span class="col-6 prd-price">${{ product.price }}</span>
+          <span class="col-5 float-right badge badge-pill" id="category">
             {{ product.category }}
           </span>
         </div>
