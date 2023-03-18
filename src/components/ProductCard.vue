@@ -6,7 +6,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-title" @click="view(product)">
-          {{ product.title.slice(0, 25) }}...
+          {{ product.title }}
         </h5>
         <div class="row py-3">
           <span class="col-6 prd-price">${{ product.price }}</span>
@@ -55,13 +55,18 @@ export default {
   min-height: 520px;
   box-shadow: 0px 14px 20px 7px #dbd5d5;
   border-radius: 30px;
-  cursor: pointer;
 }
 .card-title {
   color: #f5b56b;
   font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  cursor: pointer;
 }
-.card:hover {
+.card-title:hover,
+#addtocart:hover {
   opacity: 0.8;
 }
 .card-text {
